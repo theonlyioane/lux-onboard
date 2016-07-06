@@ -1,0 +1,73 @@
+/*GLOBAL*/
+
+.wrapper {
+	max-width: 1400px;
+    min-width: 296px;
+    margin: 0 auto;
+	}
+body {
+	background-color: #f9f9f9;
+	color: #484848;
+}
+.onboard{
+	background-color: #fff;
+	margin: 40px 0px;
+	border: 1px solid #e3e3e3;
+}
+h6{
+	color: #484848;
+	opacity: .5;
+	margin-bottom: 5px;
+}
+
+/*STEPS*/
+.onboard-steps-wrapper {
+	border-bottom:1px solid #e3e3e3;
+}
+.onboard-steps {
+	margin-left: 20px;
+}
+.onboard-steps p {
+}
+
+
+/*MAIN MODULE*/
+.onboard-departments{
+
+}
+
+.onboard-departments button {
+	width: 100%;
+	background-color: #fff;
+	border:none;
+	padding-left: 20px;
+	margin-top: 5px;
+}
+.department-button {
+	float: left;
+	color: #484848;
+	opacity: .5;
+}
+.department-button:hover {
+	color: #0372bc;
+	opacity: 1;
+}
+.department-button .fa {
+	margin-right: 10px;
+}
+
+/*DESCRIPTION*/
+.onboard-job-description {
+	padding:20px;
+}
+.onboard-job-description h3 {
+	margin-top: 0px; 
+}
+/*IINFORMATION*/
+.onboard-information {
+	padding:20px;
+}
+
+.onboard-information h4{
+	margin-top: 0px;
+}
