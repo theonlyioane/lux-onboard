@@ -13,11 +13,15 @@ body {
 	background-color: #fff;
 	margin: 40px 0px;
 	border: 1px solid #e3e3e3;
+	height: 600px;
 }
 h6{
 	color: #484848;
 	opacity: .5;
-	margin-bottom: 5px;
+	margin-bottom: 2px;
+}
+.line {
+	border-left: 1px solid #e3e3e3;
 }
 
 /*STEPS*/
@@ -27,15 +31,10 @@ h6{
 .onboard-steps {
 	margin-left: 20px;
 }
-.onboard-steps p {
-}
-
 
 /*MAIN MODULE*/
 .onboard-departments{
-
 }
-
 .onboard-departments button {
 	width: 100%;
 	background-color: #fff;
@@ -48,6 +47,10 @@ h6{
 	color: #484848;
 	opacity: .5;
 }
+.department-button.active{
+	color: #0372bc;
+	opacity: 1;
+}
 .department-button:hover {
 	color: #0372bc;
 	opacity: 1;
@@ -56,6 +59,34 @@ h6{
 	margin-right: 10px;
 }
 
+/*TREE*/
+.onboard-tree {
+	height: 543px;
+}
+.onboard-tree button{
+	border-radius: 12px;
+	height: 24px;
+	width: 24px;
+	border:2px solid #e3e3e3;
+	background: #fff;
+	float: left;
+	margin: 20px 0px 0px 10px;
+	margin-left: 20px;
+	padding: 0px;
+}
+.onboard-tree button .fa {
+	color: #0372bc;
+}
+.onboard-tree-item {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 20px;
+}
+.tree-description {
+	float: left;
+	margin:10px 0px 0px 10px;
+}
 /*DESCRIPTION*/
 .onboard-job-description {
 	padding:20px;
@@ -63,11 +94,23 @@ h6{
 .onboard-job-description h3 {
 	margin-top: 0px; 
 }
-/*IINFORMATION*/
-.onboard-information {
-	padding:20px;
+.onboard-job-description h5 {
+	margin-top: 20px; 
+	font-weight: 700;
 }
 
+/*IINFORMATION*/
+.onboard-information {
+	height: 543px;
+	padding:20px;
+}
+.onboard-information form input {
+	margin-bottom: 10px ;
+    margin-right: 10px;
+}
 .onboard-information h4{
 	margin-top: 0px;
+}
+.onboard-information h6 {
+	margin-bottom: 10px;
 }
