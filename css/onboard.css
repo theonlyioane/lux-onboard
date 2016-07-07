@@ -1,5 +1,9 @@
 /*GLOBAL*/
-
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+	padding-right: 0;
+	padding-left: 0;
+}
 .wrapper {
 	max-width: 1400px;
     min-width: 296px;
@@ -11,7 +15,7 @@ body {
 }
 .onboard{
 	background-color: #fff;
-	margin: 40px 0px;
+	margin-bottom: 80px;
 	border: 1px solid #e3e3e3;
 	height: 600px;
 }
@@ -24,6 +28,16 @@ h6{
 	border-left: 1px solid #e3e3e3;
 }
 
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
+    background-color: #0372bc;
+    border: #0372bc;
+    color: #fff;
+}
+/*INTRO*/
+.onboard-intro {
+	padding: 40px 0px;
+}
+
 /*STEPS*/
 .onboard-steps-wrapper {
 	border-bottom:1px solid #e3e3e3;
@@ -31,23 +45,34 @@ h6{
 .onboard-steps {
 	margin-left: 20px;
 }
+.onboard-steps.push {
+	padding-left:15px; 
+}
 
 /*MAIN MODULE*/
 .onboard-departments{
+	padding-left: 15px;
 }
 .onboard-departments button {
 	width: 100%;
 	background-color: #fff;
 	border:none;
-	padding-left: 20px;
-	margin-top: 5px;
+	outline: none;
+	padding: 10px 20px 10px 0px;
+	border-bottom: 1px solid #f3f3f3;
+}
+.onboard-departments .active{
+	background: #f7f7f7;
 }
 .department-button {
 	float: left;
 	color: #484848;
 	opacity: .5;
+	padding-left: 20px;
+	width: 100%;
+	text-align: justify;
 }
-.department-button.active{
+.department-button.active {
 	color: #0372bc;
 	opacity: 1;
 }
@@ -55,57 +80,103 @@ h6{
 	color: #0372bc;
 	opacity: 1;
 }
-.department-button .fa {
+.department-button img {
 	margin-right: 10px;
 }
 
 /*TREE*/
 .onboard-tree {
 	height: 543px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	border-bottom: 1px solid #e3e3e3;
+	position: relative;
+	z-index: 0;
 }
 .tree-line {
-	height: 78px;
+	height: 117px;
     width: 2px;
     background: #e3e3e3;
+    margin-left: 11px;
+    margin-top: -21px;
     position: absolute;
-    margin-left: 31px;
-    margin-top: 44px;
-    z-index: 2;
+    z-index: 1;
+}
+.tree-line.top {
+	margin-top: 20px;
+}
+.tree-line.bottom {
+	height: 25px; 
 }
 .onboard-tree button{
-	z-index: 6;
-	border-radius: 12px;
-	height: 24px;
-	width: 24px;
-	border:2px solid #e3e3e3;
-	background: #fff;
-	float: left;
-	margin: 20px 0px 0px 10px;
-	margin-left: 20px;
-	padding: 0px;
+	border: none;
+    float: left;
+    outline: none;
+    background: #fff;
+    padding: 20px;
+    height: auto;
 }
+.onboard-tree-item {
+	padding-left: 20px;
+	border-bottom: 1px solid #f3f3f3 !important;
+}
+.onboard-tree-item.active{
+	background: #f7f7f7 !important;
+} 
 .onboard-tree button .fa {
 	color: #0372bc;
 }
-.onboard-tree button:focus{
-	background: #0372bc;
-	border:2px solid #0372bc;
-	color: #fff !important;
-	outline: none;
-}
 .onboard-tree-item {
 	width: 100%;
-	height: auto;
+	height: 53px;
 	float: left;
-	margin-bottom: 20px;
 }
 .tree-description {
 	float: left;
-	margin:10px 0px 0px 10px;
+}
+.badge-wrapper {
+	width: 100%;
+    margin-left: 10px;
+    float: left;
+    margin-bottom: 5px;
+}
+.badge-wrapper img {
+	float: left;
+}
+.tree-description h5 {
+	margin-bottom: 5px;
+	margin-top: 0px;
+	margin-left: 10px;
+	float: left;
+	width: 100%;
+    text-align: justify;
+}
+.tree-description h6 {
+	color: #484848;
+	margin-top: 5px;
+	opacity: .8;
+	margin-left: 10px;
+	width: 100%;
+    text-align: justify;
+}
+.tree-description.active h5, .tree-description.active h6  {
+	color: #0372bc !important;
+	opacity: 1;
+}
+.position-add {
+	float: left;
+    height: 24px;
+    width: 24px;
+    border: 2px solid #e3e3e3;
+    border-radius: 12px;
+    position: relative;
+    z-index: 5;
+    background: #fff;
 }
 /*DESCRIPTION*/
 .onboard-job-description {
-	padding:20px;
+	padding: 20px;
+    height: 542px;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -130,7 +201,25 @@ h6{
 .onboard-information h6 {
 	margin-bottom: 10px;
 }
+.onboard-information button{
+	float: left;
+	margin-top: 20px;
+}
+.wage {
+	width: 90%;
+}
 .salary{
 	color: #0372bc;
 	font-weight: 500;
+}
+
+
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f0f0f0;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #e3e3e3;
 }
