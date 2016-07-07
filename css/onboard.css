@@ -17,7 +17,7 @@ body {
 	background-color: #fff;
 	margin-bottom: 80px;
 	border: 1px solid #e3e3e3;
-	height: 600px;
+	height: 617px;
 }
 h6{
 	color: #484848;
@@ -49,9 +49,13 @@ h6{
 	padding-left:15px; 
 }
 
-/*MAIN MODULE*/
-.onboard-departments{
-	padding-left: 15px;
+/*DEPARTMENT*/
+.department {
+	width: 190px;
+	float: left;
+	padding: 0px;
+	border-right:1px solid #e3e3e3;
+	height: 560px;
 }
 .onboard-departments button {
 	width: 100%;
@@ -67,7 +71,6 @@ h6{
 .department-button {
 	float: left;
 	color: #484848;
-	opacity: .5;
 	padding-left: 20px;
 	width: 100%;
 	text-align: justify;
@@ -75,6 +78,7 @@ h6{
 .department-button.active {
 	color: #0372bc;
 	opacity: 1;
+	font-weight: 500;
 }
 .department-button:hover {
 	color: #0372bc;
@@ -83,10 +87,16 @@ h6{
 .department-button img {
 	margin-right: 10px;
 }
-
+.onboard-departments button:hover {
+	background: #f7f7f7;
+}
 /*TREE*/
+.tree {
+	width: 300px;
+	float: left;
+}
 .onboard-tree {
-	height: 543px;
+	height: 560px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 	border-bottom: 1px solid #e3e3e3;
@@ -102,23 +112,18 @@ h6{
     position: absolute;
     z-index: 1;
 }
-.tree-line.top {
-	margin-top: 20px;
-}
-.tree-line.bottom {
-	height: 25px; 
-}
 .onboard-tree button{
 	border: none;
     float: left;
     outline: none;
     background: #fff;
-    padding: 20px;
+    padding: 20px 0px 20px 30px;
     height: auto;
 }
 .onboard-tree-item {
 	padding-left: 20px;
 	border-bottom: 1px solid #f3f3f3 !important;
+	position: relative;
 }
 .onboard-tree-item.active{
 	background: #f7f7f7 !important;
@@ -167,16 +172,64 @@ h6{
 	float: left;
     height: 24px;
     width: 24px;
-    border: 2px solid #e3e3e3;
     border-radius: 12px;
     position: relative;
     z-index: 5;
     background: #fff;
+    padding: 2px 0px 0px 1px;
+    margin-top: 25px;
+}
+.position-add.active {
+	background: #f7f7f7;
+}
+/*BRANCHES*/
+.tree-line.top {
+	margin-top: 45px;
+}
+.tree-top-branch {
+	height: 70px;
+    background: none;
+    width: 22px;
+    border-left: 2px dotted #0372bc;
+    border-top: 2px dotted #0372bc;
+    position: absolute;
+    top: 79px;
+    left: 12px;
+}
+.tree-middle-branch {
+	height: 100%;
+    background: none;
+    width: 40px;
+    border-left: 2px dotted #0372bc;
+    position: absolute;
+    top: 22px;
+    left: 12px;
+}
+.middle.position-add {
+	left: -18px;
+}
+.tree-bottom-branch {
+    height: 67px;
+    background: none;
+    width: 19px;
+    border-left: 2px dotted #0372bc;
+    border-bottom: 2px dotted #0372bc;
+    position: absolute;
+    top: 14px;
+    left: 12px;
+}
+.tree-line.bottom {
+	height: 55px; 
 }
 /*DESCRIPTION*/
+.description-content {
+	float: left;
+	width: calc(100% - 490px);
+}
 .onboard-job-description {
 	padding: 20px;
     height: 542px;
+    margin-left: 15px;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -185,7 +238,6 @@ h6{
 	margin-top: 20px; 
 	font-weight: 700;
 }
-
 /*IINFORMATION*/
 .onboard-information {
 	height: 543px;
