@@ -227,7 +227,7 @@ h6{
 	left: -18px;
 }
 .tree-bottom-branch {
-    height: 59px;
+    height: 59px !important;
     background: none;
     width: 19px;
     border-left: 2px dotted #0372bc;
@@ -247,11 +247,13 @@ h6{
     width: calc(100% - 475px);
 }
 .onboard-job-description {
-	padding: 20px;
+	padding: 20px 0px;
     height: 559px;
     margin-left: 15px;
+    padding-right: 20px;
     overflow-x: hidden;
     overflow-y: auto;
+    width: 100%;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -370,10 +372,54 @@ h6{
 	width: calc(100% - 532px);
 	}
 }
-@media (max-width: 991px) {
-	.onboard-hide, .onboard-tree-title,.description-title  {
-		display: none;
+@media (max-width: 990px){
+		.onboard-information {
+    height: 320px;
+    border-bottom: 1px solid #e3e3e3;
+    padding: 20px 0px;
 	}
+		.tablet-wrapper .line{
+	border:none;
+	}
+		.tablet-wrapper {
+	overflow-x: hidden;
+    overflow-y: auto;
+    height: 559px;
+	}
+	.onboard-job-description {
+    margin-left: 0px;
+    overflow-y: hidden;
+    position: absolute;
+    margin-top: 320px;
+	}
+	.onboard-tree-title {
+	width: 219px;
+	}
+}
+@media (max-width: 768px) {
+	.onboard-hide, .onboard-tree-title,.description-title, .onboard-information  {
+	}
+		.position-add, .tree-line {
+		display: block;
+	}
+	.onboard-tree button {
+		padding: 20px 20px 20px 30px;
+	}
+	.tree-description {
+		margin-left: 15px;
+	}
+	 h5 {
+		font-size: 16px;
+	}
+	h6 {
+		font-size: 14px;
+	}
+	.tree-line {
+		height: 121px;
+	}
+	.tree-top-branch {
+    height: 64px !important;
+   	}
 	.wrapper {
 		padding: 0px;
 	}
@@ -386,10 +432,14 @@ h6{
 	.department {
 		width: 100%;
 	}
+	.onboard-tree-item .next-show {
+		margin-top: 26px;
+	}
 	.next-show {
-		display: block;
-		float: right;
-		color: #0372bc;
+	    display: block;
+	    float: right;
+	    color: #0372bc;
+	    font-size: 18px;
 	}
 	.onboard-departments button {
 		 padding: 20px 20px 20px 0px;
@@ -406,6 +456,20 @@ h6{
 	}
 	.department-title, .department {
 		border-right:none;
+	}
+	.tablet-wrapper .col-md-7 {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.tree {
+		width: 100%;
+	}
+	.onboard-tree {
+	    overflow-y: auto;
+    	height: 100%;
+	}
+	.description-content{
+		width: 100%;
 	}
 }
 @media (max-width: 600px) {

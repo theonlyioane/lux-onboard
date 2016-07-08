@@ -18,352 +18,386 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <div class="onboard-intro">
-        <h1>Tell us about your perfect job</h1>
-        <h5>Welcome to the Luxury Yacht Group. Fill out the form below to view open jobs.</h5>
-        <a href="">Take me back to home</a>
-    </div>
+    <div class="wrapper">
+        <div class="onboard-intro">
+            <h1>Tell us about your perfect job</h1>
+            <h5>Welcome to the Luxury Yacht Group. Fill out the form below to view open jobs.</h5>
+            <a href="">Take me back to home</a>
+        </div>
 
-    <div class="onboard">
+        <div class="onboard">
 
-        <div class="onboard-steps-wrapper">
+            <div class="onboard-steps-wrapper">
 
-            <div class="department-title">
-                <h6>Step 1</h6>
-                <p>Select a department</p>
-            </div>
-            <div class="onboard-tree-title">
-                <h6>Step 2</h6>
-                <p>Select a position</p>
-            </div>
-            <div class="row no-gutters  description-title">
-                <div class="col-md-7">
+                <div class="department-title">
+                    <h6>Step 1</h6>
+                    <p>Select a department</p>
                 </div>
-                <div class="col-md-5 line">
-                    <div class="onboard-steps">
-                        <h6>Step 3</h6>
-                        <p>Enter your information</p>
-                    </div>
+                <div class="onboard-tree-title">
+                    <h6>Step 2</h6>
+                    <p>Select a position</p>
                 </div>
-            </div>
-        </div>
-
-        
-        <div class="department">
-            <div class="onboard-departments">
-
-                <button class="active" ng-click="dept='officer';prim_pos=null">
-                    <div class="department-button active">
-                        <img src="img/icon-anchor.png" height="12px" width="12px">
-                        <p>Officer</p> 
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" g-click="dept='deck';prim_pos=null">
-                        <img src="img/icon-anchor.png" height="12px" width="12px"> 
-                        <p>Deck</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='engofficer';prim_pos=null">
-                        <img src="img/icon-engineer.png" height="12px" width="12px"> 
-                        <p>Engineering Deck</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='eng';prim_pos=null">
-                        <img src="img/icon-engineer.png" height="12px" width="12px"> 
-                        <p>Engineering</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='interiormgr';prim_pos=null">
-                        <img src="img/icon-interior.png" height="12px" width="12px"> 
-                        <p>Interior Manager</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='interior';prim_pos=null">
-                        <img src="img/icon-interior.png" height="12px" width="12px"> 
-                        <p>Interior</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='galley';prim_pos=null">
-                        <img src="img/icon-galley.png" height="12px" width="12px"> 
-                        <p>Galley</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-                <button>
-                    <div class="department-button" ng-click="dept='landbased';prim_pos=null">
-                        <img src="img/icon-other.png" height="8px" width="12px"> 
-                        <p>Landbased</p>
-                        <div class="next-show">
-                            <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
-                        </div>
-                    </div> 
-                </button>
-
-            </div>
-        </div>
-
-        <div class="tree onboard-hide" ng-show="dept!=null">
-            <div class="onboard-tree" ng-show="dept=='officer'">
-
-                <!-- NEW-->
-                <button class="onboard-tree-item department-switch">
-                    <i class="fa fa-angle-up fa-lg" aria-hidden="true"></i>
-                    <h5>View Next Department</h5>
-                </button>
-                <!-- NEW-->
-
-                <button class="onboard-tree-item active" ng-class="{'active':prim_pos==257}">
-                    <div class="position-add active">
-                        <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line top"></div>
-                    <div class="tree-description" ng-click="prim_pos=257;getpos(257);">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>2nd Unlimited</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-
-                <button class="onboard-tree-item" ng-click="prim_pos=86;getpos(86);">
-                    <div class="position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>2nd (<3000gt <6000kw)</h5>
-                        <h6>Professional 5+ yrs</h6>
-                        <h6>Master 200-500grt</h6>
-                    </div>
-                </button>
-
-                <button class="onboard-tree-item">
-                    <div class="position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>2nd (<3000gt <3000kw)</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-
-                <button class="onboard-tree-item">
-                    <div class="tree-line tree-top-branch"></div>
-                    <div class="position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5> 2nd (<500gt <3000kw)</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-                <button class="onboard-tree-item">
-                    <div class="tree-line tree-middle-branch"></div>
-                    <div class="middle position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>OOW Engineer (MEOL)</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-                <button class="onboard-tree-item">
-                    <div class="tree-line tree-middle-branch"></div>
-                    <div class="middle position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>OOW Engineer (AEC)</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-                <button class="onboard-tree-item">
-                    <div class="tree-line tree-middle-branch"></div>
-                    <div class="middle position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>Electronics Engineer (ETO)</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-                <button class="onboard-tree-item">
-                    <div class="tree-line tree-bottom-branch"></div>
-                    <div class="position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line bottom"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>Junior Engineer unlicensed</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-
-                <!-- NEW-->
-                <button class="onboard-tree-item">
-                    <div class="position-add">
-                        <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
-                    </div>
-                    <div class="tree-line bottom"></div>
-                    <div class="tree-description">
-                        <div class="badge-wrapper">
-                            <img src="img/ep.png" width="40px" height="18px">
-                        </div>
-                        <h5>Junior Engineer unlicensed</h5>
-                        <h6>Veteran 10+ yrs</h6>
-                        <h6>Master 500grt</h6>
-                    </div>
-                </button>
-                <!-- NEW-->
-
-                <!-- NEW-->
-                <button class="onboard-tree-item department-switch">
-                    <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
-                    <h5>View Previous Department</h5>
-                </button>
-                <!-- NEW-->
-
-            </div>
-        </div>
-
-        <div class="row no-gutters description-content onboard-hide">
-            <div class="col-md-7">
-                <div class="onboard-job-description">
-                    <div class="badge-wrapper">
-                        <img src="img/ep.png" width="40px" height="18px">
-                    </div>
-                    <h3>Junior Captain</h3>
-                    <h5>ENTRY REQUIREMENTS/LICENSING</h5>
-                    <p>Master 500gt (Yacht) A-II/2</p>
-                    <h5>SALARY EXPECTATIONS</h5>
-                    <p class="salary">60-100ft / $4,000 - $8,000 per month<br>
-                        100-160ft / $7,000 - $12,000 per month</p>
-                        <h5>REQUIRED SKILLS</h5>
-                        <p>• Calm and charismatic personality <br>
-                            • Superior leadership, communication, management and diplomacy skills<br>
-                            • Excellent boat handling and navigational skills<br>
-                            • Excellent ISM and ISPS knowledge and practices<br>
-                            • Excellent maintenance, engineering and technical / troubleshooting experience<br>
-                            • Ability to remain calm and give directions in an emergency situation<br>
-                            • Organized and methodical<br>
-                            • Financial management<br>
-                            • Languages are a plus</p>
-                        </div>
-                    </div>
-
+                <div class="row no-gutters  description-title">
+                    <div class="col-md-7"></div>
                     <div class="col-md-5 line">
-                        <div class="onboard-information">
-                            <h4>Position Information</h4>
-                            <h6>Please select all of the employment types that apply</h6>
-                            <form>
-                              <input type="checkbox" checked>Full Time<br>
-                              <input type="checkbox">Full Time Rotational<br>
-                              <input type="checkbox">Seasonal<br>
-                              <input type="checkbox">Freelance / Deliver / Daywork<br>
-                          </form>
+                        <div class="onboard-steps">
+                            <h6>Step 3</h6>
+                            <p>Enter your information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                          <h6>Enter your desired monthly wage</h6>
-                          <input type="text" name="lastname" class="wage" value=" $5,000">
-                          <button class="btn btn-default active">Submit</button>
+
+            <div class="department">
+                <div class="onboard-departments">
+
+                    <button class="active" ng-click="dept='officer';prim_pos=null">
+                        <div class="department-button active">
+                            <img src="/Assets/img/icon-anchor.png" height="12px" width="12px">
+                            <p>Officer</p> 
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" g-click="dept='deck';prim_pos=null">
+                            <img src="/Assets/img/icon-anchor.png" height="12px" width="12px"> 
+                            <p>Deck</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='engofficer';prim_pos=null">
+                            <img src="/Assets/img/icon-engineer.png" height="12px" width="12px"> 
+                            <p>Engineering Deck</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='eng';prim_pos=null">
+                            <img src="/Assets/img/icon-engineer.png" height="12px" width="12px"> 
+                            <p>Engineering</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='interiormgr';prim_pos=null">
+                            <img src="/Assets/img/icon-interior.png" height="12px" width="12px"> 
+                            <p>Interior Manager</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='interior';prim_pos=null">
+                            <img src="/Assets/img/icon-interior.png" height="12px" width="12px"> 
+                            <p>Interior</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='galley';prim_pos=null">
+                            <img src="/Assets/img/icon-galley.png" height="12px" width="12px"> 
+                            <p>Galley</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+                    <button>
+                        <div class="department-button" ng-click="dept='landbased';prim_pos=null">
+                            <img src="/Assets/img/icon-other.png" height="8px" width="12px"> 
+                            <p>Landbased</p>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        </div> 
+                    </button>
+
+                </div>
+            </div>
+
+            <div class="tree" ng-show="dept!=null">
+                <div class="onboard-tree" ng-show="dept=='officer'">
+
+                    <!-- NEW-->
+                    <button class="onboard-tree-item department-switch">
+                        <i class="fa fa-angle-up fa-lg" aria-hidden="true"></i>
+                        <h5>Next Department</h5>
+                    </button>
+                    <!-- NEW-->
+
+                    <button class="onboard-tree-item active" ng-class="{'active':prim_pos==257}">
+                        <div class="position-add active">
+                            <i class="fa fa-check-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line top"></div>
+                            <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="tree-description" ng-click="prim_pos=257;getpos(257);">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>2nd Unlimited</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+
+                    <button class="onboard-tree-item" ng-click="prim_pos=86;getpos(86);">
+                        <div class="position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>2nd (<3000gt <6000kw)</h5>
+                            <h6>Professional 5+ yrs</h6>
+                            <h6>Master 200-500grt</h6>
+                        </div>
+                    </button>
+
+                    <button class="onboard-tree-item">
+                        <div class="position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>2nd (<3000gt <3000kw)</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+
+                    <button class="onboard-tree-item">
+                        <div class="tree-line tree-top-branch"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5> 2nd (<500gt <3000kw)</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+                    <button class="onboard-tree-item">
+                        <div class="tree-line tree-middle-branch"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="middle position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>OOW Engineer (MEOL)</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+                    <button class="onboard-tree-item">
+                        <div class="tree-line tree-middle-branch"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="middle position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>OOW Engineer (AEC)</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+                    <button class="onboard-tree-item">
+                        <div class="tree-line tree-middle-branch"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="middle position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line"></div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>Electronics Engineer (ETO)</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+                    <button class="onboard-tree-item">
+                        <div class="tree-line tree-bottom-branch"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line bottom"></div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>Junior Engineer unlicensed</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+
+                    <!-- NEW-->
+                    <button class="onboard-tree-item">
+                        <div class="position-add">
+                            <i class="fa fa-circle-o fa-lg" aria-hidden="true"></i>
+                        </div>
+                        <div class="tree-line bottom"></div>
+                        <div class="next-show">
+                                <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+                            </div>
+                        <div class="tree-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h5>Junior Engineer unlicensed</h5>
+                            <h6>Veteran 10+ yrs</h6>
+                            <h6>Master 500grt</h6>
+                        </div>
+                    </button>
+                    <!-- NEW-->
+
+                    <!-- NEW-->
+                    <button class="onboard-tree-item department-switch">
+                        <i class="fa fa-angle-down fa-lg" aria-hidden="true"></i>
+                        <h5>Previous Department</h5>
+                    </button>
+                    <!-- NEW-->
+
+                </div>
+            </div>
+
+            <div class="row no-gutters description-content onboard-hide">
+                <div class="tablet-wrapper">
+                    <div class="col-md-7">
+
+                        <div class="onboard-job-description">
+                            <div class="badge-wrapper">
+                                <img src="img/ep.png" width="40px" height="18px">
+                            </div>
+                            <h3>Junior Captain</h3>
+                            <h5>ENTRY REQUIREMENTS/LICENSING</h5>
+                            <p>Master 500gt (Yacht) A-II/2</p>
+                            <h5>SALARY EXPECTATIONS</h5>
+                            <p class="salary">60-100ft / $4,000 - $8,000 per month<br>
+                                100-160ft / $7,000 - $12,000 per month</p>
+                                <h5>REQUIRED SKILLS</h5>
+                                <p>• Calm and charismatic personality <br>
+                                    • Superior leadership, communication, management and diplomacy skills<br>
+                                    • Excellent boat handling and navigational skills<br>
+                                    • Excellent ISM and ISPS knowledge and practices<br>
+                                    • Excellent maintenance, engineering and technical / troubleshooting experience<br>
+                                    • Ability to remain calm and give directions in an emergency situation<br>
+                                    • Organized and methodical<br>
+                                    • Financial management<br>
+                                    • Organized and methodical<br>
+                                    • Financial management<br>
+                                    • Languages are a plus</p>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-md-5 line">
+                                <div class="onboard-information">
+                                    <h4>Position Information</h4>
+                                    <h6>Please select all of the employment types that apply</h6>
+                                    <form>
+                                      <input type="checkbox" checked>Full Time<br>
+                                      <input type="checkbox">Full Time Rotational<br>
+                                      <input type="checkbox">Seasonal<br>
+                                      <input type="checkbox">Freelance / Deliver / Daywork<br>
+                                  </form>
+
+                                  <h6>Enter your desired monthly wage</h6>
+                                  <input type="text" name="lastname" class="wage" value=" $5,000">
+                                  <button class="btn btn-default active">Submit</button>
+                              </div>
+                          </div>
+
+
                       </div>
                   </div>
               </div>
-          </div>
-      </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/drawer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-    <script type="text/javascript">
+              <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+              <script src="js/bootstrap.js"></script>
+              <script src="js/drawer.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
+              <script type="text/javascript">
 
-       $(document).ready(function(){
+                 $(document).ready(function(){
 
-          $('.tabs .btn-group button').click(function(){
-             var tab_id = $(this).attr('data-tab');
+                  $('.tabs .btn-group button').click(function(){
+                   var tab_id = $(this).attr('data-tab');
 
-             $('.tabs .btn-group button').removeClass('current');
-             $('.tab-content').removeClass('current');
+                   $('.tabs .btn-group button').removeClass('current');
+                   $('.tab-content').removeClass('current');
 
-             $(this).addClass('current');
-             $("#"+tab_id).addClass('current');
-         })
+                   $(this).addClass('current');
+                   $("#"+tab_id).addClass('current');
+               })
 
-      })
+              })
 
-  </script>
-  <script type="text/javascript">
+          </script>
+          <script type="text/javascript">
 
-    $(document).ready(function () {
-        $('.drawer').drawer();
-    });
+            $(document).ready(function () {
+                $('.drawer').drawer();
+            });
 
-    var changeheight = $(window).height() - 400;
+            var changeheight = $(window).height() - 400;
 
-    $("#myviewer").css({ 'min-height': changeheight });
-    console.log("Changed height to " + changeheight);
+            $("#myviewer").css({ 'min-height': changeheight });
+            console.log("Changed height to " + changeheight);
 
         /// test///
         //document.getElementById("navdrops").className = 'showthisnav';
