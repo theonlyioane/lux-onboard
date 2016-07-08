@@ -198,7 +198,7 @@ h6{
     margin-top: 25px;
 }
 .position-add.active {
-	background: #f7f7f7;
+	background: #f7f7f7 !important;
 }
 /*BRANCHES*/
 .tree-line.top {
@@ -282,6 +282,10 @@ h6{
 .onboard-information button{
 	float: left;
 	margin-top: 20px;
+}
+.onboard-information button:hover {
+	background: #065f9a !important;
+	color: #fff !important;
 }
 .wage {
 	width: 90%;
