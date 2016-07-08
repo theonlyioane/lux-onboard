@@ -260,6 +260,10 @@ h6{
 	margin-top: 20px; 
 	font-weight: 700;
 }
+.onboard-job-description .badge-wrapper{
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
 /*IINFORMATION*/
 .onboard-information {
 	height: 560px;
@@ -355,8 +359,11 @@ h6{
 	.onboard-tree button{
 		padding: 20px 0px 20px 10px;
 	}
+	.description-content {
+	width: calc(100% - 395px);
+	}
 	.description-title {
-	width: calc(100% - 595px);
+	width: calc(100% - 532px);
 	}
 }
 @media (max-width: 991px) {
