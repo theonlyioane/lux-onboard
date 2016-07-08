@@ -17,7 +17,7 @@ body {
 	background-color: #fff;
 	margin-bottom: 80px;
 	border: 1px solid #e3e3e3;
-	height: 617px;
+	height: 621px;
 }
 h6{
 	color: #484848;
@@ -33,6 +33,9 @@ h6{
     border: #0372bc;
     color: #fff;
 }
+.next-show {
+	display:none;
+}
 /*INTRO*/
 .onboard-intro {
 	padding: 40px 0px;
@@ -41,9 +44,14 @@ h6{
 /*STEPS*/
 .onboard-steps-wrapper {
 	border-bottom:1px solid #e3e3e3;
+	height: 60px;
+	float: left;
+	width: 100%;
 }
 .onboard-steps {
 	margin-left: 20px;
+	height: 50px;
+	width: 200px;
 }
 .onboard-steps.push {
 	padding-left:15px; 
@@ -56,13 +64,6 @@ h6{
 	padding: 0px;
 	border-right:1px solid #e3e3e3;
 	height: 560px;
-}
-.department-title {
-	width: 190px;
-	float: left;
-	padding: 0px;
-	border-right:1px solid #e3e3e3;
-	height: 40px;
 }
 .onboard-departments button {
 	width: 100%;
@@ -85,14 +86,22 @@ h6{
 .department-button.active {
 	color: #0372bc;
 	opacity: 1;
-	font-weight: 500;
 }
 .department-button:hover {
 	color: #0372bc;
 	opacity: 1;
 }
+.department-button p {
+    margin-right: 10px;
+    float: left;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: 3px;
+}
 .department-button img {
 	margin-right: 10px;
+	margin-top: 7px;
+	float: left;
 }
 .onboard-departments button:hover {
 	background: #f7f7f7;
@@ -105,7 +114,7 @@ h6{
 .onboard-tree {
 	height: 560px;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: auto;
 	border-bottom: 1px solid #e3e3e3;
 	position: relative;
 	z-index: 0;
@@ -228,6 +237,7 @@ h6{
 .tree-line.bottom {
 	height: 55px; 
 }
+
 /*DESCRIPTION*/
 .description-content {
 	float: left;
@@ -236,8 +246,10 @@ h6{
 }
 .onboard-job-description {
 	padding: 20px;
-    height: 542px;
+    height: 559px;
     margin-left: 15px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -248,7 +260,7 @@ h6{
 }
 /*IINFORMATION*/
 .onboard-information {
-	height: 543px;
+	height: 560px;
 	padding:20px;
 }
 .onboard-information form input {
@@ -272,9 +284,6 @@ h6{
 	color: #0372bc;
 	font-weight: 500;
 }
-
-
-
 /* SCROLLBAR */
 ::-webkit-scrollbar {
     width: 10px;
@@ -282,4 +291,103 @@ h6{
 }
 ::-webkit-scrollbar-thumb {
     background-color: #e3e3e3;
+}
+
+
+
+
+
+/*DEPARTMENT UP / DOWN BUTTONS*/
+.department-switch {
+	background: #0372bc !important;
+	padding:0px !important;
+	color: #fff;
+}
+.onboard-tree .department-switch .fa{
+	color: #fff;
+	float: left;
+	padding: 10px 20px;
+}
+.department-switch h5 {
+	float: left;
+}
+
+
+/*title bar styles*/
+.department-title {
+	width: 190px;
+	float: left;
+	padding: 0px;
+	padding-left: 20px;
+	border-right:1px solid #e3e3e3;
+	height: 61px;
+}
+.onboard-tree-title {
+	width: 300px;
+	float: left;
+	padding: 0px;
+	padding-left: 20px;
+	height: 61px;
+}
+.description-title {
+	float: left;
+	width: calc(100% - 475px);
+	padding-left: 15px;
+}
+
+@media (max-width: 1400px){
+	.wrapper {
+		padding: 0px 20px;
+	}
+}
+@media (max-width: 1100px){
+	.position-add, .tree-line {
+		display: none;
+	}
+	.tree {
+		width: 220px;
+	}
+	.onboard-tree button{
+		padding: 20px 0px 20px 10px;
+	}
+	.description-title {
+	width: calc(100% - 595px);
+	}
+}
+@media (max-width: 991px) {
+	.onboard-hide, .onboard-tree-title,.description-title  {
+		display: none;
+	}
+	.wrapper {
+		padding: 0px;
+	}
+	.onboard-intro {
+		padding: 0px 20px;
+	}
+	.department {
+		width: 100%;
+	}
+	.next-show {
+		display: block;
+		float: right;
+		color: #0372bc;
+	}
+	.onboard-departments button {
+		 padding: 20px 20px 20px 0px;
+		 font-size: 18px;
+	}
+	.department-button img{
+		float: left;
+		margin-top: 7px;
+	}
+	.department-button p{
+		float: left;
+		margin-top:2px;
+		margin-left: 10px;
+	}
+}
+@media (max-width: 600px) {
+	.mobile-hide {
+	display: none;
+	}
 }
