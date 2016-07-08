@@ -40,7 +40,9 @@ h6{
 .onboard-intro {
 	padding: 40px 0px;
 }
-
+.onboard-intro a {
+	text-decoration: underline;
+}
 /*STEPS*/
 .onboard-steps-wrapper {
 	border-bottom:1px solid #e3e3e3;
@@ -306,10 +308,13 @@ h6{
 .onboard-tree .department-switch .fa{
 	color: #fff;
 	float: left;
-	padding: 10px 20px;
+	padding: 10px;
 }
 .department-switch h5 {
 	float: left;
+}
+.department-switch:hover {
+	background: #065f9a !important;
 }
 
 
@@ -361,8 +366,11 @@ h6{
 	.wrapper {
 		padding: 0px;
 	}
+	.onboard {
+		height: 590px;
+	}
 	.onboard-intro {
-		padding: 0px 20px;
+		padding: 40px 20px;
 	}
 	.department {
 		width: 100%;
@@ -382,8 +390,11 @@ h6{
 	}
 	.department-button p{
 		float: left;
-		margin-top:2px;
+		margin-top: 0px;
 		margin-left: 10px;
+	}
+	.department-title, .department {
+		border-right:none;
 	}
 }
 @media (max-width: 600px) {
