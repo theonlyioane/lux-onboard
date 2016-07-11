@@ -6,9 +6,9 @@
 }
 .wrapper {
 	max-width: 1400px;
-    min-width: 296px;
-    margin: 0 auto;
-	}
+	min-width: 296px;
+	margin: 0 auto;
+}
 body {
 	background-color: #f9f9f9;
 	color: #484848;
@@ -29,9 +29,9 @@ h6{
 }
 
 .btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default {
-    background-color: #0372bc;
-    border: #0372bc;
-    color: #fff;
+	background-color: #0372bc;
+	border: #0372bc;
+	color: #fff;
 }
 .next-show {
 	display:none;
@@ -57,6 +57,9 @@ h6{
 }
 .onboard-steps.push {
 	padding-left:15px; 
+}
+.mobile-back {
+	display: none;
 }
 
 /*DEPARTMENT*/
@@ -94,11 +97,11 @@ h6{
 	opacity: 1;
 }
 .department-button p {
-    margin-right: 10px;
-    float: left;
-    padding: 0px;
-    margin-bottom: 0px;
-    margin-top: 3px;
+	margin-right: 10px;
+	float: left;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 3px;
 }
 .department-button img {
 	margin-right: 10px;
@@ -123,20 +126,20 @@ h6{
 }
 .tree-line {
 	height: 117px;
-    width: 2px;
-    background: #e3e3e3;
-    margin-left: 11px;
-    margin-top: -21px;
-    position: absolute;
-    z-index: 1;
+	width: 2px;
+	background: #e3e3e3;
+	margin-left: 11px;
+	margin-top: -21px;
+	position: absolute;
+	z-index: 1;
 }
 .onboard-tree button{
 	border: none;
-    float: left;
-    outline: none;
-    background: #fff;
-    padding: 20px 0px 20px 30px;
-    height: auto;
+	float: left;
+	outline: none;
+	background: #fff;
+	padding: 20px 0px 20px 30px;
+	height: auto;
 }
 .onboard-tree-item {
 	padding-left: 20px;
@@ -159,9 +162,9 @@ h6{
 }
 .badge-wrapper {
 	width: 100%;
-    margin-left: 10px;
-    float: left;
-    margin-bottom: 5px;
+	margin-left: 10px;
+	float: left;
+	margin-bottom: 5px;
 }
 .badge-wrapper img {
 	float: left;
@@ -172,7 +175,7 @@ h6{
 	margin-left: 10px;
 	float: left;
 	width: 100%;
-    text-align: justify;
+	text-align: justify;
 }
 .tree-description h6 {
 	color: #484848;
@@ -180,7 +183,7 @@ h6{
 	opacity: .8;
 	margin-left: 10px;
 	width: 100%;
-    text-align: justify;
+	text-align: justify;
 }
 .tree-description.active h5, .tree-description.active h6  {
 	color: #0372bc !important;
@@ -188,14 +191,14 @@ h6{
 }
 .position-add {
 	float: left;
-    height: 24px;
-    width: 24px;
-    border-radius: 12px;
-    position: relative;
-    z-index: 5;
-    background: #fff;
-    padding: 2px 0px 0px 1px;
-    margin-top: 25px;
+	height: 24px;
+	width: 24px;
+	border-radius: 12px;
+	position: relative;
+	z-index: 5;
+	background: #fff;
+	padding: 2px 0px 0px 1px;
+	margin-top: 25px;
 }
 .position-add.active {
 	background: #f7f7f7 !important;
@@ -206,35 +209,35 @@ h6{
 }
 .tree-top-branch {
 	height: 58px;
-    background: none;
-    width: 22px;
-    border-left: 2px dotted #0372bc;
-    border-top: 2px dotted #0372bc;
-    position: absolute;
-    top: 79px;
-    left: 12px;
+	background: none;
+	width: 22px;
+	border-left: 2px dotted #0372bc;
+	border-top: 2px dotted #0372bc;
+	position: absolute;
+	top: 79px;
+	left: 12px;
 }
 .tree-middle-branch {
 	height: 100%;
-    background: none;
-    width: 40px;
-    border-left: 2px dotted #0372bc;
-    position: absolute;
-    top: 22px;
-    left: 12px;
+	background: none;
+	width: 40px;
+	border-left: 2px dotted #0372bc;
+	position: absolute;
+	top: 22px;
+	left: 12px;
 }
 .middle.position-add {
 	left: -18px;
 }
 .tree-bottom-branch {
-    height: 59px !important;
-    background: none;
-    width: 19px;
-    border-left: 2px dotted #0372bc;
-    border-bottom: 2px dotted #0372bc;
-    position: absolute;
-    top: 20px;
-    left: 12px;
+	height: 59px !important;
+	background: none;
+	width: 19px;
+	border-left: 2px dotted #0372bc;
+	border-bottom: 2px dotted #0372bc;
+	position: absolute;
+	top: 20px;
+	left: 12px;
 }
 .tree-line.bottom {
 	height: 55px; 
@@ -243,17 +246,17 @@ h6{
 /*DESCRIPTION*/
 .description-content {
 	float: left;
-    padding-left: 15px;
-    width: calc(100% - 475px);
+	padding-left: 15px;
+	width: calc(100% - 475px);
 }
 .onboard-job-description {
 	padding: 20px 0px;
-    height: 559px;
-    margin-left: 15px;
-    padding-right: 20px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 100%;
+	height: 559px;
+	margin-left: 15px;
+	padding-right: 20px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	width: 100%;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -273,7 +276,7 @@ h6{
 }
 .onboard-information form input {
 	margin-bottom: 10px ;
-    margin-right: 10px;
+	margin-right: 10px;
 }
 .onboard-information h4{
 	margin-top: 0px;
@@ -298,11 +301,11 @@ h6{
 }
 /* SCROLLBAR */
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: #f0f0f0;
+	width: 10px;
+	background-color: #f0f0f0;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #e3e3e3;
+	background-color: #e3e3e3;
 }
 
 
@@ -366,40 +369,40 @@ h6{
 		padding: 20px 0px 20px 10px;
 	}
 	.description-content {
-	width: calc(100% - 395px);
+		width: calc(100% - 395px);
 	}
 	.description-title {
-	width: calc(100% - 532px);
+		width: calc(100% - 532px);
 	}
 }
 @media (max-width: 990px){
-		.onboard-information {
-    height: 320px;
-    border-bottom: 1px solid #e3e3e3;
-    padding: 20px 0px;
+	.onboard-information {
+		height: 320px;
+		border-bottom: 1px solid #e3e3e3;
+		padding: 20px 0px;
 	}
-		.tablet-wrapper .line{
-	border:none;
+	.tablet-wrapper .line{
+		border:none;
 	}
-		.tablet-wrapper {
-	overflow-x: hidden;
-    overflow-y: auto;
-    height: 559px;
+	.tablet-wrapper {
+		overflow-x: hidden;
+		height: 559px;
 	}
 	.onboard-job-description {
-    margin-left: 0px;
-    overflow-y: hidden;
-    position: absolute;
-    margin-top: 320px;
+		margin-left: 0px;
+		overflow-y: hidden;
+		position: absolute;
+		margin-top: 320px;
 	}
 	.onboard-tree-title {
-	width: 219px;
+		width: 219px;
 	}
 }
 @media (max-width: 768px) {
-	.onboard-hide, .onboard-tree-title,.description-title, .onboard-information  {
+	.onboard-tree-title,.description-title{
+		display: none;
 	}
-		.position-add, .tree-line {
+	.position-add, .tree-line {
 		display: block;
 	}
 	.onboard-tree button {
@@ -408,7 +411,7 @@ h6{
 	.tree-description {
 		margin-left: 15px;
 	}
-	 h5 {
+	h5 {
 		font-size: 16px;
 	}
 	h6 {
@@ -418,16 +421,24 @@ h6{
 		height: 121px;
 	}
 	.tree-top-branch {
-    height: 64px !important;
-   	}
+		height: 64px !important;
+	}
 	.wrapper {
 		padding: 0px;
+	}
+	.tablet-wrapper {
+		overflow-x: visible;
+		overflow-y: hidden;
+		height: 100%;
+		position: absolute;
+	    background: #fff;
+	    width: 100%;
 	}
 	.onboard {
 		height: 590px;
 	}
 	.onboard-intro {
-		padding: 40px 20px;
+    	padding: 20px;
 	}
 	.department {
 		width: 100%;
@@ -436,14 +447,14 @@ h6{
 		margin-top: 26px;
 	}
 	.next-show {
-	    display: block;
-	    float: right;
-	    color: #0372bc;
-	    font-size: 18px;
+		display: block;
+		float: right;
+		color: #0372bc;
+		font-size: 18px;
 	}
 	.onboard-departments button {
-		 padding: 20px 20px 20px 0px;
-		 font-size: 18px;
+		padding: 20px 20px 20px 0px;
+		font-size: 18px;
 	}
 	.department-button img{
 		float: left;
@@ -465,15 +476,25 @@ h6{
 		width: 100%;
 	}
 	.onboard-tree {
-	    overflow-y: auto;
-    	height: 100%;
+		height: 100%;
 	}
 	.description-content{
 		width: 100%;
 	}
-}
-@media (max-width: 600px) {
-	.mobile-hide {
-	display: none;
+	.onboard-job-description {
+		padding: 20px;
+	}
+	.mobile-back {
+		background: #0372bc;
+		width: 59px;
+		height: 59px;
+		float: left;
+		font-size: 18px;
+		padding: 16px 23px;
+		border: none;
+		display: block;
+	}
+	.mobile-back .fa {
+		color: #fff;
 	}
 }

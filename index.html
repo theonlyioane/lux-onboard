@@ -11,8 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/onboard.css">
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" type="text/css" href="css/drawer.css">
+    <link rel="stylesheet" type="text/css" href="css/lygone.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 
 </head>
@@ -26,8 +25,13 @@
         </div>
 
         <div class="onboard">
-
             <div class="onboard-steps-wrapper">
+
+            <!-- BACK BUTTON FOR STEP 2 / 3 ON MOBILE-->
+                <button class="mobile-back">
+                    <i class="fa fa-angle-left fa-lg" aria-hidden="true"></i>
+                </button>
+            <!-- END BACK BUTTON -->
 
                 <div class="department-title">
                     <h6>Step 1</h6>
@@ -313,9 +317,10 @@
                 </div>
             </div>
 
-            <div class="row no-gutters description-content onboard-hide">
+
+            <div class="row no-gutters description-content">
                 <div class="tablet-wrapper">
-                    <div class="col-md-7">
+                    <div class="col-md-7" ng-show="prim_pos!=null">
 
                         <div class="onboard-job-description">
                             <div class="badge-wrapper">
@@ -325,28 +330,17 @@
                             <h5>ENTRY REQUIREMENTS/LICENSING</h5>
                             <p>Master 500gt (Yacht) A-II/2</p>
                             <h5>SALARY EXPECTATIONS</h5>
-                            <p class="salary">60-100ft / $4,000 - $8,000 per month<br>
-                                100-160ft / $7,000 - $12,000 per month</p>
-                                <h5>REQUIRED SKILLS</h5>
-                                <p>• Calm and charismatic personality <br>
-                                    • Superior leadership, communication, management and diplomacy skills<br>
-                                    • Excellent boat handling and navigational skills<br>
-                                    • Excellent ISM and ISPS knowledge and practices<br>
-                                    • Excellent maintenance, engineering and technical / troubleshooting experience<br>
-                                    • Ability to remain calm and give directions in an emergency situation<br>
-                                    • Organized and methodical<br>
-                                    • Financial management<br>
-                                    • Organized and methodical<br>
-                                    • Financial management<br>
-                                    • Languages are a plus</p>
-                                </div>
+                            <p ng-bind-html="position.entry_requirements"> </p>
+                            <h5>SALARY EXPECTATIONS</h5>
+                            <p class="salary" ng-bind-html="position.salary_expectations"> </p>
                             </div>
+                        </div>
 
 
 
-                            <div class="col-md-5 line">
+                            <div class="col-md-5 line" ng-show="prim_pos!=null">
                                 <div class="onboard-information">
-                                    <h4>Position Information</h4>
+                                    <h4>{{position.job_title}}</h4>
                                     <h6>Please select all of the employment types that apply</h6>
                                     <form>
                                       <input type="checkbox" checked>Full Time<br>
@@ -364,45 +358,11 @@
 
                       </div>
                   </div>
+
               </div>
 
               <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
               <script src="js/bootstrap.js"></script>
-              <script src="js/drawer.min.js"></script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
-              <script type="text/javascript">
-
-                 $(document).ready(function(){
-
-                  $('.tabs .btn-group button').click(function(){
-                   var tab_id = $(this).attr('data-tab');
-
-                   $('.tabs .btn-group button').removeClass('current');
-                   $('.tab-content').removeClass('current');
-
-                   $(this).addClass('current');
-                   $("#"+tab_id).addClass('current');
-               })
-
-              })
-
-          </script>
-          <script type="text/javascript">
-
-            $(document).ready(function () {
-                $('.drawer').drawer();
-            });
-
-            var changeheight = $(window).height() - 400;
-
-            $("#myviewer").css({ 'min-height': changeheight });
-            console.log("Changed height to " + changeheight);
-
-        /// test///
-        //document.getElementById("navdrops").className = 'showthisnav';
-
-
-    </script>
 </body>
 </html>
