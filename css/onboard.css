@@ -250,13 +250,12 @@ h6{
 	width: calc(100% - 475px);
 }
 .onboard-job-description {
-	padding: 20px 0px;
+	padding: 20px;
 	height: 559px;
-	margin-left: 15px;
 	padding-right: 20px;
 	overflow-x: hidden;
 	overflow-y: auto;
-	width: 100%;
+	float: left;
 }
 .onboard-job-description h3 {
 	margin-top: 0px; 
@@ -273,6 +272,7 @@ h6{
 .onboard-information {
 	height: 560px;
 	padding:20px;
+	float: right
 }
 .onboard-information form input {
 	margin-bottom: 10px ;
@@ -379,23 +379,26 @@ h6{
 	.onboard-information {
 		height: 320px;
 		border-bottom: 1px solid #e3e3e3;
-		padding: 20px 0px;
+		padding: 20px;
+		float: left;
 	}
 	.tablet-wrapper .line{
 		border:none;
 	}
 	.tablet-wrapper {
 		overflow-x: hidden;
-		height: 559px;
 	}
 	.onboard-job-description {
 		margin-left: 0px;
 		overflow-y: hidden;
-		position: absolute;
-		margin-top: 320px;
+		float: right;
+		width: 100%;
 	}
 	.onboard-tree-title {
 		width: 219px;
+	}
+	.tablet-wrapper .col-md-7 {
+		border-top:1px solid #e3e3e3;
 	}
 }
 @media (max-width: 768px) {
@@ -429,10 +432,10 @@ h6{
 	.tablet-wrapper {
 		overflow-x: visible;
 		overflow-y: hidden;
-		height: 100%;
 		position: absolute;
 	    background: #fff;
 	    width: 100%;
+	    padding: 20px;
 	}
 	.onboard {
 		height: 590px;
@@ -496,5 +499,8 @@ h6{
 	}
 	.mobile-back .fa {
 		color: #fff;
+	}
+	.onboard-information {
+		padding: 0px;
 	}
 }
